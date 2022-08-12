@@ -45,7 +45,7 @@ const togglePlayers = function () {
 const rollTheDice = function () {
   if (isPlaying) {
     const rollResult = Math.trunc(Math.random() * 6) + 1;
-    diceEl.src = `dice-${rollResult}.png`;
+    diceEl.src = `./Images/dice-${rollResult}.png`;
     diceEl.classList.remove('hidden');
     if (rollResult !== 1) {
       currScore += rollResult;
